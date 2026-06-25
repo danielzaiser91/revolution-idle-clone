@@ -1,0 +1,126 @@
+:root {
+  color-scheme: dark;
+  background: #09101a;
+  color: #f5f7fb;
+  font-family: Inter, system-ui, sans-serif;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+}
+.app-shell {
+  width: min(1200px, 100%);
+  display: grid;
+  gap: 20px;
+}
+header {
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+}
+h1, h2 {
+  margin: 0 0 12px;
+}
+.panel {
+  padding: 18px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+}
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.stat-row:last-child {
+  border-bottom: none;
+}
+.stat-row span {
+  color: #a5b1c0;
+}
+strong {
+  color: #ffffff;
+}
+.circles-panel {
+  display: grid;
+  gap: 12px;
+}
+.circle-card {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+}
+.circle-card.good {
+  border-color: #5f9cff;
+}
+.circle-card h3 {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.circle-card .small {
+  color: #a5b1c0;
+}
+.circle-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+.circle-row button,
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: #1d2a43;
+  color: white;
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.action-block {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+#promotions,
+#infinityUpgrades {
+  display: grid;
+  gap: 10px;
+}
+.promo-card,
+.upgrade-card {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+}
+.note-panel p {
+  margin: 0;
+  color: #c4d1e0;
+}
+@media (min-width: 900px) {
+  .app-shell {
+    grid-template-columns: minmax(300px, 360px) minmax(400px, 1fr);
+  }
+  .actions-panel,
+  .upgrades-panel,
+  .note-panel {
+    grid-column: span 2;
+  }
+}

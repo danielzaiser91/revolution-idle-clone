@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revolution Idle Clone</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Revolution Idle Clone</h1>
+      <p>Prototype: Revolution & Infinity Layer. Eternity folgt später.</p>
+    </header>
+
+    <section class="panel stats-panel">
+      <div class="stat-row"><span>Score</span><strong id="score">0</strong></div>
+      <div class="stat-row"><span>Score / s</span><strong id="scoreRate">0</strong></div>
+      <div class="stat-row"><span>Prestige Mult</span><strong id="pMult">x1</strong></div>
+      <div class="stat-row"><span>Prestige Exp</span><strong id="pExp">1.00</strong></div>
+      <div class="stat-row"><span>Infinity Points</span><strong id="infinityPoints">0</strong></div>
+      <div class="stat-row"><span>Run</span><strong id="runState">Revolution</strong></div>
+    </section>
+
+    <section class="panel circles-panel">
+      <h2>Circles</h2>
+      <div id="circles"></div>
+    </section>
+
+    <section class="panel actions-panel">
+      <div class="action-block">
+        <h2>Prestige</h2>
+        <div id="prestigeInfo">Reach 1e10 score to unlock Prestige.</div>
+        <button id="prestigeBtn" disabled>Prestige</button>
+      </div>
+      <div class="action-block">
+        <h2>Promotions</h2>
+        <div id="promotionInfo">Promotions unlock when Prestige Mult > x1000.</div>
+        <div id="promotions"></div>
+      </div>
+      <div class="action-block">
+        <h2>Infinity</h2>
+        <div id="infinityInfo">Reach 1e308 score to unlock Infinity.</div>
+        <button id="infinityBtn" disabled>Infinity</button>
+      </div>
+      <div class="action-block">
+        <h2>Eternity</h2>
+        <div id="eternityInfo">Reach 1.79e308 IP to unlock Eternity.</div>
+        <button id="eternityBtn" disabled>Eternate</button>
+      </div>
+    </section>
+
+    <section class="panel upgrades-panel">
+      <h2>Infinity Upgrades</h2>
+      <div id="infinityUpgrades"></div>
+    </section>
+
+    <section class="panel generators-panel">
+      <h2>Generators</h2>
+      <div id="generators"></div>
+    </section>
+
+    <section class="panel stars-panel">
+      <h2>Stars</h2>
+      <div id="stars"></div>
+    </section>
+
+    <section class="panel challenge-panel">
+      <h2>Infinity Challenges</h2>
+      <div id="challengePanel"></div>
+    </section>
+
+    <section class="panel note-panel">
+      <h2>Notiz</h2>
+      <p>Infinity ist jetzt spielbar bis zum Eternity-Unlock. Eternity selbst startet erst beim Erreichen von 1.79e308 IP.</p>
+    </section>
+  </div>
+
+  <script src="js/game.js"></script>
